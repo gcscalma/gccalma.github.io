@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" width=divice-width initial-scale=1.0>
+    <title>LUTONG BAHAY</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0, 5 30, 5" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                    <path d="M0, 14 30, 14" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                    <path d="M0, 23 30, 23" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#" onclick="return select('all');">ALL FOOD</a></li>
+          <li><a href="#" onclick="return select('breakfast');">ALL DAY BREAKFAST</a></li>
+          <li><a href="#" onclick="return select('main');">MAINS</a></li>
+          <li><a href="#" onclick="return select('dessert');">DESSERT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#" onclick="return select('all');">ALL FOOD</a>
+        <a href="#" onclick="return select('breakfast');">ALL DAY BREAKFAST</a>
+        <a href="#" onclick="return select('main');">MAINS</a>
+        <a href="#" onclick="return select('dessert');">DESSERT</a>
+      </div>
+
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/lutongBahayLOGO.png" alt="logo" />
+        </a>
+      </h1>
+      <h1 class="store_name">LUTONG BAHAY</h1>
+    </div>
+
+    <h1 class="about">About Us</h1>
+    <h3 class="intro">Introducing Filipino Cuisine, making you feel at home. "Lutong Bahay", in translation from tagalog, stands for homemade cooking.
+      <br/><br/>FROM OUR KITCHEN TO YOURS
+    </h3>
+
+    <div id="content">
+      <div class="box">
+        <h2 class="menu all">~ ALL ~</h2>
+        <h2 class="menu breakfast">~ ALL DAY BREAKFAST ~</h2>
+        <h2 class="menu main">~ MAINS ~</h2>
+        <h2 class="menu dessert">~ DESSERT ~</h2>
+
+        <!--BREAKFAST-->
+        <div class="foodItem breakfast">
+          <a href="#" onclick="return select('breakfast');">
+            <img src="images/tapsilog.JPG" alt="tapa" />
+            <p class="name">
+              TAPSILOG<br />$8.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Beef, Fried Rice, Egg, Fruit/Veggies
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem breakfast">
+          <a href="#" onclick="return select('breakfast');">
+            <img src="images/longsilog.JPG" alt="longsilog" />
+            <p class="name">
+              LONGSILOG<br />$7.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Sweet Pork, Fried Rice, Egg, Fruit/Veggies
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--MAINS-->
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/bangus.JPG" alt="bangus" />
+            <p class="name">
+              BANGUS SISIG<br />$12.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Milk fish mixed with veggies and mayo. Can be spicy/mild
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/freshLumpia.JPG" alt="lumpia" />
+            <p class="name">
+              FRESH LUMPIA<br />$2.50
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Veggies wrapped in homemade crepe, with the choice of pork/chicken/veggies.
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/kare.JPG" alt="kare" />
+            <p class="name">
+              KARE KARE<br />$12.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Peanut Butter Pork Stew
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/menudo.JPG" alt="menudo" />
+            <p class="name">
+              MENUDO<br />$10.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Pork Stew with veggies
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/pampano.JPG" alt="pampano" />
+            <p class="name">
+              PAMPANO<br />$11.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Steamed fish(pampano)
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem main">
+          <a href="#" onclick="return select('main');">
+            <img src="images/pancit.JPG" alt="pancit" />
+            <p class="name">
+              PANCIT<br />$12.99
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Rice noodles with veggies. Additional choice of pork/chicken
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--DESSERT-->
+        <div class="foodItem dessert">
+          <a href="#" onclick="return select('dessert');">
+            <img src="images/puto.JPG" alt="puto" />
+            <p class="name">
+              PUTO<br />$6.99 for 6pcs
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Steamed Rice Cake
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="foodItem dessert">
+          <a href="#" onclick="return select('dessert');">
+            <img src="images/turon.JPG" alt="turon" />
+            <p class="name">
+              TURON<br />$3/each
+            </p>
+            <div class="overlay">
+              <div class="text">
+                Caramelized Banana wrapped in crepe
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+      <div class="subs">
+        <form action="https://formspree.io/xgelbogv" method="POST">
+          <label>
+            Your Email:
+            <input type="email" name="_replyto" style="background-color: rgb(255, 244, 199);"/>
+            <input type="submit" value="Subscribe" style="background-color: rgb(255, 244, 199);"/>
+          </label>
+        </form>
+      </div>
+      <div class="myEmail">
+        <a href="mailto:gccalma@myseneca.ca">gccalma@myseneca.ca</a>
+      </div>
+      <h1 class="logo2">
+        <a href="index.html">
+          <img src="images/lutongBahayLOGO.png" alt="logo" />
+        </a>
+      </h1>
+    </div>
+
+  </body>
+</html>

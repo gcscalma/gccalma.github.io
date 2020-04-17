@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" width=divice-width initial-scale=1.0>
+    <title>LUTONG BAHAY - CONTACT</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0, 5 30, 5" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                    <path d="M0, 14 30, 14" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                    <path d="M0, 23 30, 23" stroke="rgb(255, 244, 199)"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+          <li><a href="index.html" onclick="return index.html">HOME</a></li>
+          <li><a href="index.html" onclick="return select('all');">ALL FOOD</a></li>
+          <li><a href="index.html" onclick="return select('breakfast');">ALL DAY BREAKFAST</a></li>
+          <li><a href="index.html" onclick="return select('main');">MAINS</a></li>
+          <li><a href="index.html" onclick="return select('dessert');">DESSERT</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html" onclick="return select('all');">ALL FOOD</a>
+        <a href="index.html" onclick="return select('breakfast');">ALL DAY BREAKFAST</a>
+        <a href="index.html" onclick="return select('main');">MAINS</a>
+        <a href="index.html" onclick="return select('dessert');">DESSERT</a>
+      </div>
+
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/lutongBahayLOGO.png" alt="logo" />
+        </a>
+      </h1>
+      <h1 class="store_name">LUTONG BAHAY</h1>
+    </div>
+
+    <h1 class="about">About Us</h1>
+    <h3 class="intro">Introducing Filipino Cuisine, making you feel at home. "Lutong Bahay", in translation from tagalog, stands for homemade cooking.
+      <br/><br/>FROM OUR KITCHEN TO YOURS
+    </h3>
+
+    <div id="content">
+      <div id="contact">
+        <h2>CONTACT</h2>
+        </div class="userInfo">
+          <form action="https://httpbin.org/post" method="POST">
+            <p>
+              <label for="firstname">First Name: </label>
+              <input id="firstname" type="text" name="firstname" style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <label for="lastname">Last Name: </label>
+              <input id="lastname" type="text" name="lastname" style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input id="email" type="email" name="email" style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <label for="address">Address: </label>
+              <input id="address" type="text" name="address" style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <label for="city">City: </label>
+              <input id="city" type="text" list="cities" name="city" autocomplete="on" 
+                style="background-color: rgb(255, 248, 221);"/>
+              <datalist id="cities">
+                <option value="Brampton"></option>
+                <option value="Cambridge"></option>
+                <option value="Guelph"></option>
+                <option value="Hamilton"></option>
+                <option value="Kingston"></option>
+                <option value="Mississauga"></option>
+                <option value="Ottawa"></option>
+                <option value="Richmond Hill"></option>
+                <option value="Toronto"></option>
+                <option value="Vaughan"></option>
+              </datalist>
+            </p>
+            <p>
+              <label for="phonenumber">Phone Number: </label>
+              <input id="phonenumber" type="tel" name="phonenumber"
+                placeholder="888-888-8888" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <label for="postalcode">Postal Code: </label>
+              <input id="postalcode" type="text" name="postalcode" 
+                placeholder="X#X #X#" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+                style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              Would you like to be phoned? <input type="checkbox" name="bephoned" style="background-color: rgb(255, 248, 221);"/>Yes
+            </p>
+            <p>
+              <input type="radio" name="message" value="Question" onclick="return displayOrderNum2()" />Question
+              <input type="radio" name="message" value="Comment" onclick="return displayOrderNum2()"/>Comment
+              <input type="radio" name="message" value="OrderP" onclick="return display()" />Order Problem
+            </p>
+            <p id="orderNum" style="display:none">
+              Order Number: <input type="text" name="orderNum" style="background-color: rgb(255, 248, 221);"/>
+            </p>
+            <p>
+              <textarea name="message_text" cols="40" rows="5" style="background-color: rgb(255, 248, 221);"></textarea>
+            </p>
+            <p>
+              <input type="hidden" name="name" value="Genevieve Clare Calma" />
+            </p>
+            <p>
+              <input type="submit" value="submit" />
+            </p>
+          </form>
+        </div>
+    </div>
+
+    <div id="footer">
+      <div class="subs">
+        <form action="https://formspree.io/xgelbogv" method="POST">
+          <label>
+            Your Email:
+            <input type="email" name="_replyto" style="background-color: rgb(255, 244, 199);"/>
+            <input type="submit" value="Subscribe" style="background-color: rgb(255, 244, 199);"/>
+          </label>
+        </form>
+      </div>
+      <div class="myEmail">
+        <a href="mailto:gccalma@myseneca.ca">gccalma@myseneca.ca</a>
+      </div>
+      <h1 class="logo2">
+        <a href="index.html">
+          <img src="images/lutongBahayLOGO.png" alt="logo" />
+        </a>
+      </h1>
+    </div>
+
+  </body>
+</html>
